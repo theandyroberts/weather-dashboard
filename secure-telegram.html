@@ -104,23 +104,17 @@
     .lead-image {
       width: 100%;
       height: 360px;
-      background: linear-gradient(135deg, #130f1f 0%, #18233f 45%, #0b3a5a 100%);
       border-radius: 4px;
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 72px;
-      letter-spacing: -4px;
-      user-select: none;
       overflow: hidden;
       position: relative;
+      background: #111;
     }
-    .lead-image::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 30% 50%, rgba(255,233,0,0.12) 0%, transparent 60%);
+    .lead-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .lead-caption {
       font-family: 'Arial', sans-serif;
@@ -375,7 +369,7 @@
   </div>
 </header>
 <main class="article-body">
-  <div class="lead-image" aria-hidden="true">🛡️🤖📲</div>
+  <div class="lead-image"><img src="./hero-instaclaw-telegram-security.png" alt="Editorial illustration of a secured Telegram bot protected by a shield with network infrastructure in the background"></div>
   <p class="lead-caption">InstaClaw provisions Telegram-connected OpenClaw instances with security controls already in place, rather than asking users to manually harden the stack.</p>
 
   <p>
